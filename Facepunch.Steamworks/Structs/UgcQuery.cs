@@ -110,7 +110,7 @@ namespace Steamworks.Ugc
 			if ( page <= 0 ) throw new System.Exception( "page should be > 0" );
 
 			if ( consumerApp == 0 ) consumerApp = SteamClient.AppId;
-			if ( creatorApp == 0 ) creatorApp = consumerApp;
+			// if ( creatorApp == 0 ) creatorApp = consumerApp;
 
 			UGCQueryHandle_t handle;
 

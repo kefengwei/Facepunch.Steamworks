@@ -99,7 +99,7 @@ namespace Steamworks.Ugc
 									if ( SteamUGC.Internal.GetQueryUGCAdditionalPreview(
 										Handle, i, j, out previewUrlOrVideo, out originalFileName, ref previewType ) )
 									{
-										item.AdditionalPreviews[j] = new UgcAdditionalPreview( 
+										item.AdditionalPreviews[j] = new UgcAdditionalPreview(i,j, 
 											previewUrlOrVideo, originalFileName, previewType );
 									}
 								}
